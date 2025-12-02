@@ -1,0 +1,80 @@
+{
+  "mode": "mainnet",
+  "comment_mode": "✅ ACTIVO EN MAINNET - Usando API real y datos reales",
+
+  "exchange": {
+    "sandbox": false,
+    "comment_sandbox": "✅ Sandbox deshabilitado - Usando Binance REAL",
+    "comment_security": "⚠️ API Keys se cargan desde .env por seguridad",
+    "api_key": "CARGADO_DESDE_ENV",
+    "api_secret": "CARGADO_DESDE_ENV"
+  },
+
+  "trading": {
+    "symbol": "SOL/USDC:USDC",
+    "timeframe": "4h",
+    "comment_timeframe": "✅ v3.6+ CONTINUOUS MONITORING: Loop cada 2 minutos, analiza 6 timeframes (1m, 5m, 15m, 1h, 4h, 1d)",
+    "order_size_usdt": 5.0,
+    "comment_order_size": "Tamaño de orden fijo en USDC (5 USDC por trade en futuros SOL/USDC:USDC perpetual swap)",
+    "leverage": 1.0,
+    "comment_leverage": "v3.6+: 1x leverage (sin apalancamiento, futuros perpetuos con USDC para evitar comisiones)",
+    "margin_mode": "isolated",
+    "comment_margin": "isolated = margen aislado (conforme user settings para testnet matching live)"
+  },
+
+  "multitimeframe": {
+    "enabled": true,
+    "comment_mtf": "✅ Validación Multi-TimeFrame: Daily (confirma tendencia) + 4H (entrada y estructura)",
+    "validate_daily": true,
+    "validate_4h": true,
+    "validate_1h": false,
+    "comment_validate_1h": "Deshabilitado: 4H es nuestro timeframe de entrada principal, no necesitamos confirmar en 1H",
+    "min_correlation_strength": "STRONG",
+    "min_overall_confidence": 0.70,
+    "comment_confidence": "✅ Solo enter cuando: confianza global >= 70% AND Daily+4H correlacionan STRONG o VERY_STRONG"
+  },
+
+  "strategy": {
+    "rsi_period": 7,
+    "rsi_oversold": 25,
+    "rsi_overbought": 75,
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "max_trades_per_day": 8,
+    "comment_strategy": "Parámetros de la estrategia híbrida (RSI + Price Action + Crecetrader)"
+  },
+
+  "crecetrader": {
+    "min_candle_location_quality": 60,
+    "min_volatility_quality": 60,
+    "min_overall_quality": 70,
+    "comment": "Thresholds para análisis Crecetrader profesional"
+  },
+
+  "risk_management": {
+    "max_open_positions": 1,
+    "comment_max_positions": "Solo 1 posición abierta a la vez (conservative risk)",
+    "sl_pct": 1.5,
+    "comment_sl": "v3.6+: 1.5% stop loss para SOL/USDC (balance entre protección y ruido del mercado)",
+    "tp1_pct": 4.5,
+    "comment_tp1": "v3.6+: 4.5% TP1 (3:1 ratio) - Cierra 50% + activa trailing stop para 50% restante",
+    "tp2_pct": 6.0,
+    "comment_tp2": "DEPRECATED en v3.6+: TP2 ya no se usa, trailing stop gestiona el 50% restante desde TP1",
+    "comment_ratio": "Risk/Reward: 1:3 (si arriesga 1.5%, busca ganar 4.5% en TP1, más ganancias con trailing stop)"
+  },
+
+  "hours": {
+    "start": "00:00",
+    "end": "23:59",
+    "timezone": "UTC",
+    "comment": "✅ 4H no está limitado a una sesión: velas cada 4 horas, operamos 24/7. Permite múltiples sesiones (NY, EU, ASIA)"
+  },
+
+  "metrics": {
+    "track_winrate": true,
+    "track_trade_count": true,
+    "track_pnl": true,
+    "track_average_pnl": true,
+    "comment_metrics": "Las métricas son CLAVE para establecer horizontes claros y evaluar performance"
+  }
+}

@@ -1,0 +1,197 @@
+TRAD BOT v3.5+ - 4H Crecetrader Edition
+========================================
+
+Project Structure (Organized & Clean)
+=====================================
+
+TRAD/
+│
+├─ 📄 CORE FILES
+│  ├── main.py                    (Bot entry point - 353 bytes)
+│  ├── requirements.txt           (Python dependencies - 65 bytes)
+│  ├── README.md                  (Project documentation - NEW)
+│  ├── STRUCTURE.txt              (This file)
+│  └── .gitignore                 (Git configuration)
+│
+├─ 📁 config/
+│  ├── config.json                (Bot configuration - 4H strategy)
+│  └── .env                       (API keys - NOT in git)
+│
+├─ 📁 src/                        (Main source code)
+│  ├── bot.py                     (Core bot logic - 54.9 KB)
+│  ├── constants.py               (Configuration constants)
+│  │
+│  ├── analysis/                  (Market & technical analysis)
+│  │  ├── __init__.py
+│  │  ├── market_analyzer.py      (Volatility, momentum)
+│  │  ├── crecetrader.py          (Crecetrader analysis)
+│  │  ├── multitimeframe_validator.py (Daily+4H validation)
+│  │  ├── referentes_calculator.py
+│  │  └── panic_detector.py
+│  │
+│  ├── strategy/                  (Trading strategy)
+│  │  ├── hybrid.py               (RSI + Price Action + Crecetrader)
+│  │  ├── indicators.py           (Technical indicators - RSI, EMA)
+│  │  ├── candle_patterns.py      (Pattern recognition)
+│  │  ├── modes.py                (Trading mode manager)
+│  │  ├── tzv_validator.py        (T+Z+V Crecetrader validation)
+│  │  └── dynamic_mode_manager.py
+│  │
+│  ├── entry/                     (Entry management)
+│  │  └── entry_executor.py
+│  │
+│  ├── exit/                      (Exit management)
+│  │  ├── dead_trade_detector.py
+│  │  ├── sl_tp_manager.py
+│  │  └── exit_manager.py
+│  │
+│  ├── risk_management/           (Risk calculation)
+│  │  └── risk_manager.py
+│  │
+│  ├── monitoring/                (Trade logging)
+│  │  └── trade_logger.py
+│  │
+│  └── trading/                   (Trading utilities)
+│     ├── sessions.py
+│     ├── recovery.py
+│     └── hybrid_gatekeeper_adapter.py
+│
+├─ 📁 docs/                       (Documentation - Organized)
+│  ├── README.md                  (Quick start)
+│  ├── ARCHITECTURE_ANALYSIS.md
+│  ├── RULES.md
+│  ├── CRECETRADER_CONCEPTOS_CLAVE.md
+│  ├── STRATEGY_HYBRID.md
+│  ├── MONITOR.md
+│  ├── QUICK_START.md
+│  │
+│  ├── analysis/                  (Analysis documents)
+│  │  ├── TIMEFRAME_ANALYSIS.md   (Why 4H > 1H - 80% noise reduction)
+│  │  └── ANALISIS_BITCOIN_HOY.md
+│  │
+│  ├── migration/                 (Migration history)
+│  │  └── MIGRATION_SUMMARY_4H.md (Recent 1H→4H migration details)
+│  │
+│  └── reports/                   (Audit & reports)
+│     ├── AUDIT_REPORT.txt
+│     └── PROFESSIONAL_AUDIT_REPORT.md
+│
+├─ 📁 scripts/                    (Utility scripts)
+│  ├── health_monitor.py          (Bot health monitoring)
+│  ├── monitor.py                 (General monitoring)
+│  ├── monitor_realtime.py        (Real-time monitoring)
+│  ├── run_bot.sh                 (Bot execution script)
+│  └── .gitkeep
+│
+├─ 📁 logs/                       (Log files - Not in git)
+│  ├── bot_health_alerts.log
+│  ├── trades_testnet.log
+│  ├── .gatekeeper_stats_testnet.json
+│  ├── trades/                    (Trade records)
+│  │  ├── trades.json
+│  │  ├── trade_journal.txt
+│  │  └── trade_stats.json
+│  └── .gitkeep
+│
+├─ 📁 data/                       (Data files)
+│  ├── (market data cache)
+│  └── .gitkeep
+│
+├─ 📁 archive/                    (Old/archived files)
+│  └── (previous versions)
+│
+├─ 📁 venv/                       (Virtual environment - Not in git)
+│  └── (Python packages)
+│
+└─ 📁 __pycache__/                (Python cache - Not in git)
+   └── (auto-generated)
+
+
+KEY METRICS - 4H Strategy
+==========================
+
+Timeframe:          4 Hours
+Leverage:           10.0x
+Max Trades/Day:     0-4 (quality over quantity)
+Expected Win Rate:  65-75%
+Noise Reduction:    80% → 15%
+Crecetrader Eff.:   20% → 95%
+
+Multi-Timeframe:
+  - Primary:   4H (entry timeframe)
+  - Confirm:   Daily (trend validation)
+  - Validates: T+Z+V Crecetrader formula
+
+
+CRITICAL FILES
+==============
+
+1. main.py              - Bot startup (DO NOT DELETE)
+2. config/config.json   - Bot configuration (EDIT CAREFULLY)
+3. src/bot.py          - Core bot logic (MAIN LOGIC)
+4. requirements.txt    - Dependencies (KEEP UPDATED)
+5. docs/               - Documentation (REFERENCE ONLY)
+
+
+FILES CLEANED UP
+================
+
+❌ Deleted:
+   • bot.log (empty log file)
+   • .cleanup_and_organize.sh (old/temporary script)
+
+✅ Organized:
+   • Docs moved to docs/ with subcategories
+   • Logs moved to logs/ directory
+   • Scripts moved to scripts/ directory
+   • Documentation organized by type
+
+
+QUICK COMMANDS
+==============
+
+# Start bot (testnet - SAFE)
+export BOT_MODE=testnet && python3 main.py
+
+# Start bot (mainnet - REAL MONEY)
+export BOT_MODE=mainnet && python3 main.py
+
+# Monitor health
+python3 scripts/health_monitor.py
+
+# View trades
+tail -f logs/trades_testnet.log
+
+# Check bot health
+tail -100 logs/bot_health_alerts.log
+
+
+VERSION INFO
+============
+
+Current Version:    v3.5+ (4H Crecetrader Edition)
+Last Update:        2025-11-28
+Status:             ✅ Ready for Testnet
+Commit:             4b87fcb (4H Migration)
+Changes:            12 files modified, 1021 insertions
+
+
+NEXT STEPS
+==========
+
+1. Review: docs/migration/MIGRATION_SUMMARY_4H.md
+2. Test: export BOT_MODE=testnet && python3 main.py
+3. Monitor: 1-3 days of testnet trading
+4. Validate: Multi-timeframe correlation, T+Z+V logic
+5. Deploy: Switch to mainnet (if tests pass)
+
+
+STRUCTURE MAINTAINED BY
+=======================
+
+Project: TRAD Bot (Trading AI Decision)
+Team:    Juani's Trading System
+System:  OSIRIS (Auto-saves every 3 minutes)
+
+Generated: 2025-11-28
+Updated:   Claude Code

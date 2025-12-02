@@ -1,0 +1,56 @@
+✅ GatekeeperV2 initialized - Level 2 (PERMISSIVE)
+✅ TradeLogger initialized - Detailed trade tracking ENABLED
+✅ RiskManager initialized - Position limits & daily loss tracking ENABLED
+✅ DynamicModeManager initialized - Automatic mode switching ENABLED
+✅ MarketAnalyzer initialized - Volatility & momentum calculation ENABLED
+✅ MultiTimeframeValidator initialized - Professional correlation analysis ENABLED
+✅ ReferentesCalculator initialized - Fibonacci + Historical referentes ENABLED
+✅ TZVValidator initialized - T+Z+V formula validation ENABLED
+✅ MultitimeframeAdapter initialized - 6-timeframe hierarchical analysis (1m/5m/15m/1h/4h/1d)
+✅ MultitimeframeAudit initialized - Data integrity & anomaly detection
+🎯 OPERATIONAL MODE: Continuous 24/7 monitoring (NOT timeframe-bound)
+   - Daily/4H/1H = CONTEXT (trend, structure)
+   - 15m/5m/1m = ENTRY SIGNALS (execution)
+
+🔧 Inyectando API Health Check...
+✅ APIHealthCheck inyectado en bot
+
+📡 Verificando conectividad API...
+🔄 Esperando API... (timeout: 30s)
+✅ API disponible después de 7.2s
+✅ API OK - Iniciando bot...
+
+🚀 TRAD Bot v3.6+ INICIADO - CONTINUOUS 24/7 MULTI-TIMEFRAME MONITORING
+📊 Par: SOL/USDC:USDC | Modo: mainnet
+⏳ Ciclo de monitoreo: Cada 0 minutos
+📍 Estrategia: RSI + Price Action + FULL Crecetrader + Multi-Timeframe Correlation
+======================================================================
+🎯 OPERATIONAL MODEL: Continuous Opportunity Detection
+   • NO opera en un timeframe fijo
+   • Busca oportunidades 24/7 cuando todo alinea
+   • Daily/4H/1H = CONTEXTO (pronóstico, tendencia)
+   • 15m/5m/1m = SEÑALES DE ENTRADA (ejecución)
+======================================================================
+🧠 CONSCIOUSNESS LEVEL: FULL T+Z+V VALIDATION + MTF CORRELATION
+   ✓ T (Tendencia): Trend validation across all timeframes
+   ✓ Z (Zonas): Historical + Fibonacci referentes calculated
+   ✓ V (Vacío): 2:1 minimum risk/reward ENFORCED
+   ✓ MTF (Multi-TF): 6 timeframes analyzed and correlated
+======================================================================
+💰 TRADING CONFIG:
+   Order Size: 5.00 USDT
+   Leverage: 1.0x
+   Margin Mode: isolated
+======================================================================
+📊 METRICS TRACKING:
+   Trades: 0 | Wins: 0 | Losses: 0 | Winrate: 0% | Total P&L: 0%
+======================================================================
+
+🔄 CHECKING FOR CRASHED POSITIONS...
+✅ No crashed positions detected. Bot ready to trade.
+✅ fetch_ohlcv(SOL/USDC:USDC, 1d) OK - 30 candles
+✅ fetch_ohlcv(SOL/USDC:USDC, 4h) OK - 100 candles
+✅ fetch_ohlcv(SOL/USDC:USDC, 1h) OK - 100 candles
+✅ fetch_ohlcv(SOL/USDC:USDC, 1d) OK - 30 candles
+✅ fetch_ohlcv(SOL/USDC:USDC, 4h) OK - 100 candles
+❌ Error: 'TRADBot_v3' object has no attribute 'sl_pct'

@@ -1,0 +1,32 @@
+{
+  "gatekeeper": {
+    "enabled": true,
+    "level": 2,
+    "level_description": "PERMISSIVE - Allow entry with RSI < 35/> 65",
+    "level_guide": {
+      "1": "VERY PERMISSIVE - RSI < 40/> 60, minimal requirements",
+      "2": "PERMISSIVE - RSI < 35/> 65, price action confirmation",
+      "3": "BALANCED - RSI < 30/> 70, EMA alignment required",
+      "4": "SELECTIVE - RSI < 25/> 75, strong confirmations",
+      "5": "MAXIMUM SELECTIVE - RSI < 20/> 80, all confirmations"
+    },
+    "auto_adjust": false,
+    "min_confidence": 0.5,
+    "cache_duration_seconds": 30,
+    "logging": true,
+    "stats_tracking": true
+  },
+  "trading_params": {
+    "order_size_usdt": 25,
+    "leverage": 50,
+    "margin_mode": "isolated",
+    "position_mode": "one-way"
+  },
+  "risk_management": {
+    "max_open_positions": 3,
+    "max_daily_loss_percent": 5,
+    "stop_loss_percent": 2,
+    "min_reward_risk_ratio": 1.5,
+    "trailing_stop_enabled": true
+  }
+}

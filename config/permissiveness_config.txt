@@ -1,0 +1,35 @@
+# PERMISSIVENESS MODES CONFIGURATION - v3.3 Dynamic Trading
+# Can be changed without restarting bot - reads every cycle
+
+# Current Mode (1=Very Permissive, 2=Permissive, 3=Balanced, 4=Selective, 5=Maximum Selective)
+MODE: 2
+
+# Auto-detect market phase and adjust mode automatically?
+AUTO_DETECT: false
+
+# Override reason (if manually set)
+OVERRIDE_REASON: "Default: Balanced mode for stable operation"
+
+# Manual mode override (set to any number 1-5 to override auto-detect)
+# Leave as 0 for auto-detect
+MANUAL_OVERRIDE: 0
+
+# Logging
+LOG_MODE_CHANGES: true
+LOG_PHASE_DETECTION: true
+
+# ─────────────────────────────────────────────────────────────
+# MODE THRESHOLDS REFERENCE
+# ─────────────────────────────────────────────────────────────
+# MODE 5 (MAXIMUM SELECTIVE):  RSI < 20 or > 80 | EMA strict | MTF 3/3 | GateKeeper required
+# MODE 4 (SELECTIVE):          RSI < 25 or > 75 | EMA strong | MTF 2/3 | GateKeeper required
+# MODE 3 (BALANCED):           RSI < 30 or > 70 | EMA yes    | MTF 1/3 | GateKeeper yes
+# MODE 2 (PERMISSIVE):         RSI < 35 or > 65 | EMA no     | MTF 0/3 | GateKeeper no
+# MODE 1 (VERY PERMISSIVE):    RSI < 40 or > 60 | EMA no     | MTF 0/3 | GateKeeper no
+# ─────────────────────────────────────────────────────────────
+
+# MARKET PHASES
+# REVERSAL:   Low momentum + extreme RSI → Use MODE 5 (Maximum Selective)
+# IMPULSE:    Strong momentum + trending → Use MODE 4-5 (Selective)
+# CORRECTIVE: Correction move 50%+ → Use MODE 2-3 (Permissive/Balanced)
+# NEUTRAL:    Low momentum + normal RSI → Use MODE 3 (Balanced)

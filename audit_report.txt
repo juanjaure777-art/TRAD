@@ -1,0 +1,52 @@
+=== AUDITORÍA COMPLETA TRAD BOT ===
+Timestamp: mar 02 dic 2025 00:08:57 -03
+
+1. ESTADO DEL BOT
+root       42014  0.0  0.0   7560  3996 ?        Ss   00:05   0:00 /bin/bash -c -l source /root/.claude/shell-snapshots/snapshot-bash-1764640498056-xmcx0y.sh && eval 'source venv/bin/activate && python3 main.py > bot_output.log 2>&1' \< /dev/null && pwd -P >| /tmp/claude-c355-cwd
+root       42019  1.7  1.3 460920 218992 ?       Sl   00:05   0:03 python3 main.py
+
+2. ÚLTIMOS ANÁLISIS MTF
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 95/100 | Confidence: 0.80
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 95/100 | Confidence: 0.80
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 95/100 | Confidence: 0.80
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 100/100 | Confidence: 0.83
+
+3. DECISIONES GATEKEEPER (últimas 5)
+[2025-12-01 23:55:53] REJECTED | Conf: 0.30 | RSI 36.4 near oversold but NEUTRAL phase with bearish EMA structure (128<132). Level 2 requires trending phase confirmation and RSI<35 for entry. Current setup lacks directional conviction despite good R:R 1:2.5
+[2025-12-01 23:57:43] REJECTED | Conf: 0.30 | RSI 35.2 near oversold but NEUTRAL phase lacks directional conviction. Level 2 requires trending phase confirmation. Volatility normal but without trend alignment, setup is weak despite good R:R 1:2.5
+[2025-12-01 23:58:04] REJECTED | Conf: 0.30 | RSI 34.8 near oversold but NEUTRAL phase with bearish EMA structure (128<132). Level 2 requires alignment confirmation - current setup lacks directional clarity. Wait for trending phase or RSI<30 for better entry
+[2025-12-01 23:59:53] REJECTED | Conf: 0.30 | RSI 34.3 approaching oversold but still above Level 2 threshold (<35). NEUTRAL phase with bearish EMA structure (128<132) suggests unclear direction. Need RSI <35 or stronger trend alignment for Level 2 entry
+[2025-12-02 00:00:13] REJECTED | Conf: 0.30 | RSI 34.5 near oversold but Phase NEUTRAL with bearish EMA structure (128<132). Level 2 requires RSI<35 with trending confirmation, not neutral phase. Volatility normal but no clear directional alignment
+[2025-12-02 00:02:03] REJECTED | Conf: 0.35 | RSI 34 near oversold but Phase NEUTRAL with bearish EMA structure (128<132). Level 2 requires RSI<35 with trend confirmation - current setup lacks directional conviction. Volatility normal but no clear trend alignment.
+[2025-12-02 00:02:22] REJECTED | Conf: 0.30 | RSI 33.6 near oversold but Phase NEUTRAL with bearish EMA structure (128<132). Level 2 requires RSI<35 with trending confirmation - current NEUTRAL phase insufficient. Need clearer trend alignment for entry.
+[2025-12-02 00:04:11] REJECTED | Conf: 0.30 | Level 2 requires RSI < 35 but RSI is 34.0 (borderline). Phase is NEUTRAL not trending. EMA 128 < 132 shows bearish structure but not confirmed trend. Need clearer directional signal or RSI < 30 for neutral phase entry.
+[2025-12-02 00:04:32] REJECTED | Conf: 0.35 | RSI 34.2 near oversold but NEUTRAL phase with bearish EMA structure (128<132). Level 2 requires RSI<35 with trend alignment - current setup lacks directional conviction. Volatility normal but momentum neutral (47% HH vs 37% LL) suggests choppy conditions
+[2025-12-02 00:07:41] APPROVED | Conf: 0.85 | Confidence 0.85: Alignment 85%, MTF Direction BEARISH confirmed, RSI 32.7 in oversold range (30-35) for short entry, R:R 1:2.5 exceeds Level 2 requirement (1:1.5). Despite EXTREME_VOLATILITY risk flag on daily, current volatility NORMAL at 1.67% allows entry with strong MTF alignment
+
+4. SÍMBOLO CONFIGURADO
+    "symbol": "SOL/USDC:USDC",
+
+5. LEVERAGE Y ORDER SIZE
+    "order_size_usdt": 5.0,
+    "comment_order_size": "Tamaño de orden fijo en USDC (5 USDC por trade en futuros SOL/USDC:USDC perpetual swap)",
+
+6. RISK MANAGEMENT
+    "sl_pct": 1.5,
+    "tp1_pct": 4.5,
+
+7. PRECIO ACTUAL SOL
+Error obteniendo precio
+
+8. GATEKEEPER LEVEL
+        gatekeeper_level = 2  # PERMISSIVE (configurable: 1-5)
+
+9. ARCHIVOS MODIFICADOS RECIENTEMENTE
+src/trading/gatekeeper_v2.py
+
+10. ÚLTIMO LOG TIMESTAMP
+-rw-r--r-- 1 root root 9,6K dic  2 00:07 logs/trades/trade_journal.txt
+
+=== FIN AUDITORÍA ===
