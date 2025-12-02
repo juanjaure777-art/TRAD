@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs (keep logs/ directory but not contents)
+logs/*
+!logs/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+/tmp/
+
+# Config with secrets
+.env
+secrets.json
+credentials.json
+config_secrets.json
+
+# Analysis docs (generated during debugging)
+DEBUG_ANALYSIS_*.md
+EXHAUSTIVE_AUDIT_*.md
+CANDLE_PATTERNS_FIX_*.md
+MODE_TESTING_*.md
+ARCHITECTURE_*.md
