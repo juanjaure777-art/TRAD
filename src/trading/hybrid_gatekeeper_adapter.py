@@ -30,7 +30,7 @@ class HybridGatekeeperAdapter:
         self.last_signal: Optional[HybridSignal] = None
 
     def should_enter(self, signal: HybridSignal, market_phase: str = "NEUTRAL",
-                    additional_context: Dict[str, Any] = None) -> Tuple[bool, Dict[str, Any]]:
+                    additional_context: Dict[str, Any] = None, open_positions: int = 0) -> Tuple[bool, Dict[str, Any]]:
         """
         Validate HybridStrategy signal through GatekeeperV2.
 
@@ -38,6 +38,7 @@ class HybridGatekeeperAdapter:
             signal: HybridSignal from HybridStrategy.analyze()
             market_phase: Current market phase (IMPULSE, CORRECTIVE, REVERSAL, NEUTRAL)
             additional_context: Additional market data (volatility, momentum, etc)
+            open_positions: Number of currently open positions (from RiskManager)
 
         Returns:
             (should_enter: bool, decision_details: dict)
@@ -69,7 +70,7 @@ class HybridGatekeeperAdapter:
             ema_fast=signal.ema_9,
             ema_slow=signal.ema_21,
             market_phase=market_phase,
-            open_positions=0,  # TODO: Get from bot state
+            open_positions=open_positions,  # FIXED: Now passed from RiskManager state
             reward_risk_ratio=self._calculate_rr_ratio(signal),
             additional_context=additional_context or {}
         )

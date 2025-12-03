@@ -1,0 +1,171 @@
+[2025-12-02 00:21:46] [MTF_ERROR] TZVValidator.validate_t_tendencia() got an unexpected keyword argument 'confidence_threshold' - Continuing with single timeframe
+[2025-12-02 00:21:46] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:21:51] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:21:51] [MODE_SWITCH] ✅ Mode stable: PERMISSIVE
+[2025-12-02 00:22:01] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:22:05] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:22:16] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:22:20] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:22:30] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:22:34] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:22:45] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:22:49] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:23:00] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:23:04] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:23:15] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:23:19] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:23:30] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:23:33] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:23:44] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:23:48] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:23:59] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:24:04] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:24:14] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:24:19] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:24:29] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:24:34] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:24:45] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:24:48] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:24:59] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:25:03] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 85% | Opportunity: 90/100 | Confidence: 0.68
+[2025-12-02 00:25:14] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:25:18] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:25:28] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:25:32] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:25:43] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:25:47] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:25:58] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:26:02] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:26:12] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:26:17] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:26:27] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:26:32] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:26:42] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:26:47] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:26:57] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:27:02] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:27:13] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:27:18] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:27:29] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:27:33] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:27:44] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:27:49] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:28:00] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:28:04] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:28:14] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:28:18] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:28:29] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:28:32] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:28:43] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:28:47] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 93/100 | Confidence: 0.71
+[2025-12-02 00:28:57] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:29:02] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 100/100 | Confidence: 0.84
+[2025-12-02 00:29:12] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:29:16] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:29:27] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:29:30] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:29:41] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:29:45] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:29:55] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:30:00] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:30:10] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:30:28] [MTF_ERROR] TZVValidator.validate_t_tendencia() got an unexpected keyword argument 'confidence_threshold' - Continuing with single timeframe
+[2025-12-02 00:30:28] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:30:32] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:30:32] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:30:37] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.83: Alignment 88% excellent, MTF Direction BEARISH strong signal, RSI 31.3 in oversold range (30-35) perfect for short entry, Opportunity 98/100 exceptional setup. Despite 1d volatility warning, current volatility NORMAL at 1.95%. Phase NEUTRAL ignored due to strong MTF BEARISH alignment | Tech:0% + Claude:1%
+[2025-12-02 00:30:37] [SIGNAL_DETECTED] SIGNAL_1_SHORT | SHORT @ $126.16 RSI:31.3
+[2025-12-02 00:30:37] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:30:37] [RISK_MANAGER_APPROVED] Position allowed (Risk Manager check passed)
+[2025-12-02 00:30:37] [ORDER_REQUESTED] SIGNAL_1_SHORT | SHORT 1.5 @ 1.0x
+[2025-12-02 00:30:37] [ORDER_PLACED] SIGNAL_1_SHORT | Exchange:binance Order:ORDRX_1
+[2025-12-02 00:30:37] [TRADE_FILLED] SIGNAL_1_SHORT | Entry: $0.00 Qty: 1.5
+[2025-12-02 00:30:37] [MODE_SWITCH] ✅ Mode stable: PERMISSIVE
+[2025-12-02 00:30:47] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:30:51] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:30:51] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:30:56] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.85: Alignment 88% excellent, MTF Direction BEARISH confirmed, RSI 31.4 in oversold range (30-35) perfect for bearish continuation, Opportunity 98/100 exceptional setup. Despite 1d extreme volatility warning, current volatility NORMAL at 1.95% manageable for Level 2 | Tech:0% + Claude:1%
+[2025-12-02 00:30:56] [SIGNAL_DETECTED] SIGNAL_2_SHORT | SHORT @ $126.19 RSI:31.4
+[2025-12-02 00:30:56] [STOP_LOSS] SIGNAL_1_SHORT | Stop: $126.19 | Loss: -$126.19 (-inf%)
+[2025-12-02 00:30:56] [TRADE_CLOSED] SIGNAL_1_SHORT | Final P&L: $-126.19 (-inf%) | Reason: STOP LOSS HIT
+[2025-12-02 00:31:06] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:31:11] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:31:11] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:31:15] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.83: Alignment 88%, MTF Direction BEARISH confirms short, RSI 31.3 in oversold range (30-35) for reversal long, Opportunity 98/100 excellent despite 1d extreme volatility warning, current volatility NORMAL at 1.95% | Tech:0% + Claude:1%
+[2025-12-02 00:31:15] [SIGNAL_DETECTED] SIGNAL_3_SHORT | SHORT @ $126.16 RSI:31.3
+[2025-12-02 00:31:15] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:31:15] [RISK_REJECTED] ❌ DAILY_LOSS_LIMIT HIT (-inf% of 5.0%)
+[2025-12-02 00:31:25] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:31:30] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:31:30] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:31:40] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.80: Alignment 88% excellent, MTF Direction BEARISH strong signal, RSI 31 in oversold range (30-35) for BEARISH entry, Opportunity 98/100 exceptional. Despite 1d extreme volatility risk factor, current volatility NORMAL at 1.95% manageable for Level 2 | Tech:0% + Claude:1%
+[2025-12-02 00:31:40] [SIGNAL_DETECTED] SIGNAL_4_SHORT | SHORT @ $126.07 RSI:31.0
+[2025-12-02 00:31:40] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:31:40] [RISK_REJECTED] ❌ DAILY_LOSS_LIMIT HIT (-inf% of 5.0%)
+[2025-12-02 00:31:51] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:31:55] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:31:55] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:32:00] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.80: Alignment 88% excellent, MTF Direction BEARISH strong consensus, RSI 31.4 in oversold range (30-35) perfect for bearish reversal entry, Opportunity 98/100 exceptional setup. Despite 1d volatility spike, current volatility NORMAL at 2.01%. Level 2 allows entry with alignment >70% and RSI in range | Tech:0% + Claude:1%
+[2025-12-02 00:32:00] [SIGNAL_DETECTED] SIGNAL_5_SHORT | SHORT @ $126.19 RSI:31.4
+[2025-12-02 00:32:00] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:32:00] [RISK_REJECTED] ❌ DAILY_LOSS_LIMIT HIT (-inf% of 5.0%)
+[2025-12-02 00:32:11] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:32:15] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:32:15] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:32:19] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.83: Alignment 88% BEARISH, RSI 31.2 in oversold range (30-35) for short entry, Opportunity 98/100 excellent. Despite 1d extreme volatility warning, current volatility 2.01% is manageable for Level 2. Strong MTF alignment overrides Phase NEUTRAL | Tech:0% + Claude:1%
+[2025-12-02 00:32:19] [SIGNAL_DETECTED] SIGNAL_6_SHORT | SHORT @ $126.14 RSI:31.2
+[2025-12-02 00:32:19] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:32:19] [RISK_REJECTED] ❌ DAILY_LOSS_LIMIT HIT (-inf% of 5.0%)
+[2025-12-02 00:32:30] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:32:34] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:32:34] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation
+[2025-12-02 00:32:34] [GATEKEEPER_APPROVED] Level:2 | Reason:Confidence 0.83: Alignment 88% BEARISH, RSI 31.2 in oversold range (30-35) for short entry, Opportunity 98/100 excellent. Despite 1d extreme volatility warning, current volatility 2.01% is manageable for Level 2. Strong MTF alignment overrides Phase NEUTRAL | Tech:0% + Claude:1%
+[2025-12-02 00:32:34] [SIGNAL_DETECTED] SIGNAL_7_SHORT | SHORT @ $126.13 RSI:31.2
+[2025-12-02 00:32:34] [TZV_INFO] Tendencia failed but continuing with GatekeeperV2 approval
+[2025-12-02 00:32:34] [RISK_REJECTED] ❌ DAILY_LOSS_LIMIT HIT (-inf% of 5.0%)
+[2025-12-02 00:32:52] [MTF_ERROR] TZVValidator.validate_t_tendencia() got an unexpected keyword argument 'confidence_threshold' - Continuing with single timeframe
+[2025-12-02 00:32:53] [TZV_VALIDATION] FAILED Components: Tendencia | Confidence: 70%
+[2025-12-02 00:32:57] 
+[MTF_ANALYSIS] Direction: BEARISH | Alignment: 88% | Opportunity: 98/100 | Confidence: 0.83
+[2025-12-02 00:32:57] [MTF_OVERRIDE] RSI filter bypassed (MTF alignment 88% > 80%) - Forcing signal for Gatekeeper evaluation

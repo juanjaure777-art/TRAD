@@ -23,7 +23,7 @@ class RiskManager:
 
         # Session tracking
         self.session_start = datetime.utcnow()
-        self.daily_pnl = 0.0
+        self.daily_pnl = 0.0  # Accumulated P&L in percentage
         self.open_positions = 0
         self.last_trade_time = None
         self.trades_today = 0
@@ -34,6 +34,9 @@ class RiskManager:
         self.stats_file.parent.mkdir(parents=True, exist_ok=True)
 
         self._load_session_stats()
+
+        # CRITICAL FIX: Sanitize loaded values to prevent -inf/nan errors
+        self._sanitize_pnl_values()
 
     def _load_session_stats(self):
         """Load previous session stats if available"""
@@ -63,6 +66,23 @@ class RiskManager:
             # Invalid timestamp format, treat as new day
             return True
 
+    def _sanitize_pnl_values(self):
+        """Sanitize P&L values to prevent inf/nan errors"""
+        import math
+
+        # Check for invalid values
+        if math.isnan(self.daily_pnl) or math.isinf(self.daily_pnl):
+            self._log_risk_event(f"⚠️ WARNING: Invalid daily_pnl detected ({self.daily_pnl}), resetting to 0.0")
+            self.daily_pnl = 0.0
+
+        # Ensure daily_pnl is within reasonable bounds (-100% to +1000%)
+        if self.daily_pnl < -100.0:
+            self._log_risk_event(f"⚠️ WARNING: daily_pnl too low ({self.daily_pnl}%), capping at -100%")
+            self.daily_pnl = -100.0
+        elif self.daily_pnl > 1000.0:
+            self._log_risk_event(f"⚠️ WARNING: daily_pnl too high ({self.daily_pnl}%), capping at +1000%")
+            self.daily_pnl = 1000.0
+
     def can_open_position(self) -> Tuple[bool, str]:
         """Check if new position can be opened"""
 
@@ -72,9 +92,9 @@ class RiskManager:
             self._log_risk_event(reason)
             return False, reason
 
-        # Check 2: Daily loss limit
-        if self.daily_pnl < (-self.max_daily_loss_pct):
-            reason = f"❌ DAILY_LOSS_LIMIT HIT ({self.daily_pnl:.2f}% of {self.max_daily_loss_pct}%)"
+        # Check 2: Daily loss limit (daily_pnl is in % already)
+        if self.daily_pnl <= -self.max_daily_loss_pct:
+            reason = f"❌ DAILY_LOSS_LIMIT HIT (Daily P&L: {self.daily_pnl:.2f}% / Limit: -{self.max_daily_loss_pct}%)"
             self._log_risk_event(reason)
             return False, reason
 

@@ -133,17 +133,20 @@ class MultiTimeframeValidator:
                 recommendation="Datos insuficientes",
             )
 
-        # Extraer highs y lows
+        # Extraer OHLC (candles format: [open, high, low, close, volume])
         highs = candles[:, 1] if candles.shape[1] > 1 else candles[:, 0]
         lows = candles[:, 2] if candles.shape[1] > 2 else candles[:, 0]
+        closes = candles[:, 3] if candles.shape[1] > 3 else candles[:, 0]
 
         # Detectar estructura (máximos/mínimos)
         phase = self.structure_detector.detect_structure_phase(highs, lows)
 
-        # Validar T (Tendencia)
-        t_validation = self.tzv_validator.validate_t_tendencia(
-            highs, lows, confidence_threshold=0.4
+        # Validar T (Tendencia) - FIXED: correct parameters (highs, lows, closes, lookback)
+        t_validation_result = self.tzv_validator.validate_t_tendencia(
+            highs, lows, closes, lookback=min(20, len(closes))
         )
+        # Extract boolean validation from result dict
+        t_validation = t_validation_result.get('validation_passed', False)
 
         # Validar Z (Zonas) - simplificado
         z_validation = len(highs) > 3 and (np.max(highs) > np.min(lows))
