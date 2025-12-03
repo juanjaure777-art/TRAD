@@ -877,7 +877,8 @@ class TRADBot_v3:
             gk_approved, gk_decision = self.gatekeeper_adapter.should_enter(
                 signal=signal,
                 market_phase=self.current_market_phase if hasattr(self, 'current_market_phase') else 'NEUTRAL',
-                additional_context=enhanced_context
+                additional_context=enhanced_context,
+                open_positions=self.risk_manager.open_positions  # FIXED: Pass real open positions count
             )
 
             # If GatekeeperV2 rejects, override the technical signal
